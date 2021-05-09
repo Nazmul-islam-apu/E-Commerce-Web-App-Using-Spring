@@ -61,6 +61,13 @@
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator-core</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>com.shop</groupId>
+			<artifactId>ShopCommon</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 	</dependencies>
 	
 	
