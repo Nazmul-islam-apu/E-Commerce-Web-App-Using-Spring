@@ -30,6 +30,7 @@ public class UserRepositoryTest {
 	public void testCreateNewUserWithOneRole() {
 		Role roleAdmin = entityManager.find(Role.class,1);
 		User userNameNI = new User("apunazmul6@gmail.com","nazmul123","Md Nazmul","Islam");
+		userNameNI.setEnabled(true);
 		userNameNI.addRole(roleAdmin);
 		User savedUser = repo.save(userNameNI);
 		assertThat(savedUser.getId()).isGreaterThan(0);
@@ -38,6 +39,7 @@ public class UserRepositoryTest {
 	@Test
 	public void testCreateNewUserWithTwoRoles() {
 		User userNameNAS = new User("samiashipu1414@gmail.com","nafisa123","Nafisa Anjum","Samia");
+		userNameNAS.setEnabled(true);
 		Role roleEditor = new Role(3);
 		Role roleAssistant = new Role(5);
 		userNameNAS.addRole(roleEditor);

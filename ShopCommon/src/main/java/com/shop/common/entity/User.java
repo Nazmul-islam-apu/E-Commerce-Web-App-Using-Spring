@@ -47,12 +47,6 @@ public class User {
 	private Set<Role> roles = new HashSet<>();
 	
 
-	public User() {
-		// TODO Auto-generated constructor stub
-	}
-	
-	
-
 	public User(String email, String password, String firstName, String lastName) {
 		super();
 		this.email = email;
@@ -60,8 +54,10 @@ public class User {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-
-
+	
+	public User() {
+			
+	}
 
 	public Integer getId() {
 		return id;
